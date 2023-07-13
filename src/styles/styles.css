@@ -8,11 +8,11 @@
   list-style: none;
   margin: 0;
   padding: 10px;
-  font-size: small;
 }
 
 ul li.left {
   margin-right: auto;
+  margin-left: 1rem;
 }
 
 .nav-bar ul li.gray {
@@ -26,12 +26,11 @@ ul li.left {
 /* users */
 .users {
   background-color: white;
-  line-height: 12px;
   box-sizing: border-box;
   margin: 0.25rem;
   width: fit-content;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 0.45rem 1rem;
   box-shadow: 2px 0 3px 0 #888, -2px 0 3px 0 #888, 0 2px 3px 0 #888;
 }
 img {
@@ -44,7 +43,7 @@ img {
   border-radius: 3px;
   border: none;
   cursor: pointer;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 .btn:hover {
   background-color: #0f6bda;
@@ -53,9 +52,30 @@ img {
 .client-container {
   width: 70%;
   margin: 0 auto;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 680px) {
+  .client-container {
+    display: block;
+  }
+  .users {
+    margin: 0 auto;
+    margin-bottom: 0.45rem;
+  }
+  .nav-bar ul {
+    font-size: small;
+  }
+}
+@media only screen and (min-width: 681px) and (max-width: 900px) {
+  .client-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
 }

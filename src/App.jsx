@@ -5,7 +5,7 @@ import { clinet } from "./components/UserInfo";
 const listOfClients = clinet.map((cl) => {
   // console.log(cl);
   return (
-    <div>
+    <div key={cl.index}>
       <User key={cl.index} client={cl} />
     </div>
   );
