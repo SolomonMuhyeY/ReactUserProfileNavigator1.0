@@ -27,7 +27,7 @@ ul li.left {
 .users {
   background-color: white;
   box-sizing: border-box;
-  margin: 0.25rem;
+  margin: 0.45rem;
   width: fit-content;
   text-align: center;
   padding: 0.45rem 1rem;
@@ -76,6 +76,13 @@ img {
   .client-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .client-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
   }
 }
