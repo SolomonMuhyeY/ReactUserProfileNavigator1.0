@@ -1,9 +1,11 @@
-import React from 'react'
-
-export default function User() {
+import React from "react";
+import "../styles/styles.css";
+export default function User({ client }) {
   return (
     <div className='users'>
-      <h1>User1</h1>
+      <img src={client.img} />
+      <h1>{client.name}</h1>
+      <button>{client.btnMsg}</button>
     </div>
-  )
+  );
 }

@@ -27,4 +27,14 @@ ul li.left {
   width: 65%;
   margin: 0 auto;
   border: 2px solid;
+  background: red;
+}
+/* users */
+.user {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  width: 200px;
+  height: 200px;
 }

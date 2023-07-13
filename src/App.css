@@ -3,3 +3,7 @@
   margin: 0 auto;
   background-color: #ddd;
 }
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+}
