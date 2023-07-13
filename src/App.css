@@ -1,7 +1,7 @@
 .App {
   width: 70%;
   margin: 0 auto;
-  background-color: #ddd;
+  background-color: rgba(250, 250, 250, 0.589);
 }
 .client-list {
   display: flex;

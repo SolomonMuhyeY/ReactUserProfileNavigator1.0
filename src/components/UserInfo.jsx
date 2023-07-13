@@ -1,9 +1,9 @@
-import image1 from "./images/img1.png";
-import image2 from "./images/img2.png";
-import image3 from "./images/img3.png";
-import image4 from "./images/img4.png";
-import image5 from "./images/img5.png";
-import image6 from "./images/img6.png";
+import image1 from "../assets/images/img1.png";
+import image2 from "../assets/images/img2.png";
+import image3 from "../assets/images/img3.png";
+import image4 from "../assets/images/img4.png";
+import image5 from "../assets/images/img5.png";
+import image6 from "../assets/images/img6.png";
 // export const imageSource = [image1, image2, image3, image4, image5, image6];
 export const clinet = [
   {
@@ -13,31 +13,31 @@ export const clinet = [
     index: 1,
   },
   {
-    name: "Danani Bunini",
+    name: "Danny Belete",
     btnMsg: "Click to view profile",
     img: image2,
     index: 2,
   },
   {
-    name: "Kebdede Lebede",
+    name: "Meaza Ayalew",
     btnMsg: "Click to view profile",
     img: image3,
     index: 3,
   },
   {
-    name: "Macho Nunec",
+    name: "Kedir Arega",
     btnMsg: "Click to view profile",
     img: image4,
     index: 4,
   },
   {
-    name: "Solndm Skoe",
+    name: "Lemma Bekele",
     btnMsg: "Click to view profile",
     img: image5,
     index: 5,
   },
   {
-    name: "Burnr Bndmdm",
+    name: "Selam Alemu",
     btnMsg: "Click to view profile",
     img: image6,
     index: 6,

@@ -1,13 +1,11 @@
-import { useState } from "react";
 import "./App.css";
 import User from "./components/User";
 import NavBar from "./components/NavBar";
-import { clinet } from "./assets/ArrayOfImages";
-const imgSource = [];
+import { clinet } from "./components/UserInfo";
 const listOfClients = clinet.map((cl) => {
   // console.log(cl);
   return (
-    <div className='client-list'>
+    <div>
       <User key={cl.index} client={cl} />
     </div>
   );
@@ -17,7 +15,7 @@ function App() {
     <>
       <div className='App'>
         <NavBar />
-        <div>{listOfClients}</div>
+        <div className='client-container'>{listOfClients}</div>
       </div>
     </>
   );

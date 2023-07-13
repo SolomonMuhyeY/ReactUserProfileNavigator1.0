@@ -4,8 +4,8 @@ export default function User({ client }) {
   return (
     <div className='users'>
       <img src={client.img} />
-      <h1>{client.name}</h1>
-      <button>{client.btnMsg}</button>
+      <p>{client.name}</p>
+      <button className='btn'>{client.btnMsg}</button>
     </div>
   );
 }

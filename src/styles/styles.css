@@ -23,18 +23,39 @@ ul li.left {
 .nav-bar ul li:not(:first-child) {
   margin-left: 10px;
 }
-.users {
-  width: 65%;
-  margin: 0 auto;
-  border: 2px solid;
-  background: red;
-}
 /* users */
-.user {
-  display: flex;
-  flex-wrap: wrap;
+.users {
+  background-color: white;
+  line-height: 12px;
+  box-sizing: border-box;
+  margin: 0.25rem;
+  width: fit-content;
+  text-align: center;
+  padding-bottom: 1rem;
+  box-shadow: 2px 0 3px 0 #888, -2px 0 3px 0 #888, 0 2px 3px 0 #888;
 }
 img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 140px;
+}
+.btn {
+  background-color: #0466de;
+  padding: 3px 4px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.btn:hover {
+  background-color: #0f6bda;
+  transform: translateY(-1px);
+}
+.client-container {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
