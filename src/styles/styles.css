@@ -79,7 +79,7 @@ img {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1210px) {
   .client-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
