@@ -2,12 +2,13 @@
   text-align: center;
 }
 .client-container {
-  width: 100%;
+  width: 90%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: -0.5rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
