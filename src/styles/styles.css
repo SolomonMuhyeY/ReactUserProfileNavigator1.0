@@ -60,6 +60,12 @@ img {
   flex-wrap: wrap;
   margin-bottom: 4rem;
 }
+.red {
+  color: red;
+  font-weight: bolder;
+}
+
+/* media query */
 @media screen and (max-width: 680px) {
   .client-container {
     display: block;
