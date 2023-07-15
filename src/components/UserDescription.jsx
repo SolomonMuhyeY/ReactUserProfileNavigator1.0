@@ -1,12 +1,16 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { client } from "./UserInfo";
 import "../styles/styles.css";
 
 function UserDescription() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const user = client.find((cl) => cl.id == id);
 
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   if (!user) {
     return <div className='user-not-found'>User not found</div>;
   }
@@ -15,6 +19,7 @@ function UserDescription() {
       <img className='user-image' src={user.img} alt={user.name} />
       <h2 className='user-name'>{user.name}</h2>
       <p className='desciption-text'>{user.description}</p>
+      <button className="go-back" onClick={handleGoBack}>Go Back</button>
     </div>
   );
 }

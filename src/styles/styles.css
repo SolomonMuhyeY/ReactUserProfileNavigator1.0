@@ -39,11 +39,12 @@ img {
 }
 .btn {
   background-color: #0466de;
-  padding: 3px 4px;
+  padding: 8px 12px;
   border-radius: 3px;
   border: none;
   cursor: pointer;
   transition: all 0.5s ease;
+  margin: 14px;
 }
 .btn:hover {
   background-color: #5397ea;
@@ -65,4 +66,18 @@ img {
 .user-name {
   font-weight: bolder;
   font-style: italic;
+}
+.go-back {
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.go-back:hover {
+  background-color: #0056b3;
 }
