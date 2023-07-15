@@ -1,8 +1,41 @@
 .App {
-  width: 100%;
-  margin: 0;
+  text-align: center;
 }
-.client-list {
-  display: flex;
+.client-container {
+  width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+}
+/* media query */
+@media screen and (max-width: 680px) {
+  .client-container {
+    display: block;
+  }
+  .users {
+    margin: 0 auto;
+    margin-bottom: 0.45rem;
+  }
+  .nav-bar ul {
+    font-size: small;
+  }
+}
+@media only screen and (min-width: 681px) and (max-width: 900px) {
+  .client-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1210px) {
+  .client-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
 }

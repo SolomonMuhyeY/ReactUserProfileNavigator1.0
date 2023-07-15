@@ -8,13 +8,13 @@ function UserDescription() {
   const user = client.find((cl) => cl.id == id);
 
   if (!user) {
-    return <div className='red'>User not found</div>;
+    return <div className='user-not-found'>User not found</div>;
   }
   return (
-    <div>
-      <img src={user.img} alt={user.name} />
-      <h1>{user.name}</h1>
-      <p>{user.description}</p>
+    <div className='description-container'>
+      <img className='user-image' src={user.img} alt={user.name} />
+      <h2 className='user-name'>{user.name}</h2>
+      <p className='desciption-text'>{user.description}</p>
     </div>
   );
 }
