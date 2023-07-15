@@ -32,7 +32,7 @@ ul li.left {
   width: fit-content;
   text-align: center;
   padding: 0.45rem 1rem;
-  box-shadow: 2px 0 3px 0 #888, -2px 0 3px 0 #888, 0 2px 3px 0 #888;
+  box-shadow: 2px 0 1px 0 #ddd, -2px 0 1px 0 #ddd, 0 2px 1px 0 #ddd;
 }
 img {
   width: 150px;
